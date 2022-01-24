@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href ="styles.css">
+    </head>
+
+    <body>
+        <h1>
+            TESTE
+        </h1>
+
+        <div>
+            <h3>Adicione Seus Dados</h1>
+            <label for="addMat">Matricula: </label>
+            <input type="text" name="addMat">
+            <label for="addNome">Nome: </label>
+            <input type="text" name="addNome">
+            <label for="addEmail"> Email: </label>
+            <input type="email" name="addEmail">
+            <label for="addRamal">Ramal: </label>
+            <input type="text" name="addRamal">
+            <label for="addSetor">Setor: </label>
+            <input type="text" name="addSetor">
+            <label for="addData">Data de Aniversário: </label>
+            <input type="date" name="addData">
+
+            <button type="button" id="add">Add</button>
+        </div>
+
+        <br>
+
+        <div>
+            <h3>Realizar busca no banco de dados</h3>
+            <input type="text" name="search" />
+
+            <select name="esc" id="esc">
+                <option value="data">Aniversário</option>
+                <option value="setor">Setor</option>
+            </select>
+            
+            <button type="button" id="alpha">Alfabética</button>
+        </div>
+
+        
+
+        <table>
+            <thead>
+              <th>Matricula</th>
+              <th>Nome</th>
+              <th>Email</th>
+              <th>Ramal</th>
+              <th>Setor</th>
+              <th>Data de Aniversário</th>
+            </thead>
+        
+            <tbody id="result">
+            </tbody>
+        </table>
+
+        <script src="script.js"></script>
+    </body>
+</html>
